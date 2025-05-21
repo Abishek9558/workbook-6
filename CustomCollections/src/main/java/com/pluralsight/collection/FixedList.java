@@ -5,7 +5,7 @@ import java.util.List;
 
         public class FixedList<T> {
             private final int maxSize;
-            private final List<T> items;
+            private ArrayList <T> items;
 
             public FixedList(int maxSize) {
                 this.maxSize = maxSize;
@@ -13,7 +13,7 @@ import java.util.List;
             }
 
             public void add(T item) {
-                if (items.size() >= maxSize) {
+                if (items.size() == maxSize) {
                     System.out.println("cannot add item: maximum reached" + maxSize);
                     return;
                 }

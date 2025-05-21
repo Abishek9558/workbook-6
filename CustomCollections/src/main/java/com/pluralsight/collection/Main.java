@@ -8,13 +8,13 @@ public class Main {
         numbers.add(10);
         numbers.add(3);
         numbers.add(92);
-      //numbers.add(43);
+      numbers.add(43);
         System.out.println("Number of items in list: " + numbers.getItems().size());
 
         FixedList<LocalDate> dates = new FixedList<>(2);
         dates.add(LocalDate.now());
         dates.add(LocalDate.now());
-        //dates.add(15);
+        dates.add(15);
         System.out.println("Number of items in dates list: " + dates.getItems().size());
 
     }
